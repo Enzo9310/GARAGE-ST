@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garage AutoTech</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Garage AutoTech</h1>
+        <nav>
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#a-propos">À propos</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#reservation">Réservation</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="accueil">
+        <h2>Bienvenue chez AutoTech</h2>
+        <p>Entretien, réparation et diagnostic complet de votre véhicule. Qualité et confiance au rendez-vous !</p>
+        <div class="galerie">
+            <img src="https://images.unsplash.com/photo-1581091215367-3c50c6b8c467" alt="Atelier 1">
+            <img src="https://images.unsplash.com/photo-1605280363959-34f14d3b83eb" alt="Atelier 2">
+            <img src="https://images.unsplash.com/photo-1622396638943-7b14549b2e86" alt="Atelier 3">
+        </div>
+    </section>
+
+    <section id="services">
+        <h2>Nos Services</h2>
+        <ul>
+            <li>✅ Vidange et entretien</li>
+            <li>✅ Réparation moteur et boîte de vitesses</li>
+            <li>✅ Freinage et suspension</li>
+            <li>✅ Diagnostic électronique</li>
+            <li>✅ Préparation au contrôle technique</li>
+            <li>✅ Climatisation</li>
+            <li>✅ Changement de pneus et équilibrage</li>
+        </ul>
+    </section>
+
+    <section id="a-propos">
+        <h2>À propos de nous</h2>
+        <p>Depuis plus de 15 ans, AutoTech est votre garage de confiance. Nos mécaniciens qualifiés s’occupent de tous types de véhicules avec passion et professionnalisme.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p><strong>Adresse :</strong> 123 rue des Mécanos, 75000 Paris</p>
+        <p><strong>Téléphone :</strong> 01 23 45 67 89</p>
+        <p><strong>Email :</strong> contact@garage-autotech.fr</p>
+        <form>
+            <label for="nom">Nom :</label><br>
+            <input type="text" id="nom" name="nom" required><br><br>
+
+            <label for="email">Email :</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="message">Message :</label><br>
+            <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+
+    <section id="reservation">
+        <h2>Réserver un rendez-vous</h2>
+        <form>
+            <label for="nom-res">Nom :</label>
+            <input type="text" id="nom-res" name="nom" required>
+
+            <label for="email-res">Email :</label>
+            <input type="email" id="email-res" name="email" required>
+
+            <label for="tel">Téléphone :</label>
+            <input type="tel" id="tel" name="tel" required>
+
+            <label for="date">Date souhaitée :</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="service">Type de service :</label>
+            <select id="service" name="service" required>
+                <option value="">--Choisissez un service--</option>
+                <option value="vidange">Vidange</option>
+                <option value="freinage">Freins</option>
+                <option value="diagnostic">Diagnostic</option>
+                <option value="clim">Climatisation</option>
+                <option value="autre">Autre</option>
+            </select>
+
+            <label for="message-res">Message complémentaire :</label>
+            <textarea id="message-res" name="message"></textarea>
+
+            <button type="submit">Envoyer la demande</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Garage AutoTech - Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>
